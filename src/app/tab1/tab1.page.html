@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div>
+    <ion-item>
+      <ion-label>Ion Input</ion-label>
+      <ion-input placeholder="Tap here"></ion-input>
+    </ion-item>
+
+    <ion-list class="items-list">
+      <ion-item *ngFor="let item of data; trackBy: trackFn" >
+        {{ item }}
+      </ion-item>
+    </ion-list>
+
+    <ion-button class="btn-standard" (click)="openPicker()">Open Picker</ion-button>
+  </div>
+</ion-content>

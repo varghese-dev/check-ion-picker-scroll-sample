@@ -1,0 +1,7 @@
+{
+  "name": "check-ion-picker-scroll-sample",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
